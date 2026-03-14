@@ -20,7 +20,7 @@
 
 ```bash
 npm install -g rapid-lama
-rlama "Summarize recursion in one paragraph."
+rlama "What is the capital of Italy?"
 ```
 
 ### From source (local development)
