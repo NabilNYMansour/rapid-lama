@@ -14,6 +14,7 @@ if (args.includes("--help") || args.includes("-h")) {
   console.log("");
   console.log("Usage:");
   console.log("  rapidclaw [options] <message>");
+  console.log("  rclaw [options] <message>");
   console.log("");
   console.log("Options:");
   console.log("  -h, --help     Show help");
@@ -26,7 +27,9 @@ if (args.includes("--help") || args.includes("-h")) {
 }
 
 if (args.length === 0) {
-  console.error("Please provide a message. Example: rapidclaw \"say hello world\"");
+  console.error(
+    "Please provide a message. Example: rapidclaw \"say hello world\" (or rclaw \"say hello world\")"
+  );
   process.exit(1);
 }
 

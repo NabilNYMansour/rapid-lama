@@ -4,7 +4,8 @@
   "description": "A TypeScript CLI tool",
   "main": "dist/cli.js",
   "bin": {
-    "rapidclaw": "./dist/cli.js"
+    "rapidclaw": "./dist/cli.js",
+    "rclaw": "./dist/cli.js"
   },
   "files": [
     "dist"
