@@ -1,10 +1,11 @@
 {
-  "name": "rlama",
+  "name": "rapid-lama",
   "version": "1.0.0",
   "description": "A TypeScript CLI tool",
   "main": "dist/cli.js",
   "bin": {
-    "rlama": "./dist/cli.js"
+    "rlama": "./dist/cli.js",
+    "rapidlama": "./dist/cli.js"
   },
   "files": [
     "dist"
@@ -12,7 +13,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
     "dev": "node ./dist/cli.js",
-    "publish": "(npm whoami >/dev/null 2>&1 || npm login) && pnpm build && pnpm version patch && npm publish"
+    "publish-npm": "(npm whoami >/dev/null 2>&1 || npm login) && pnpm build && pnpm version patch && npm publish"
   },
   "keywords": ["rapid ollama", "quick response", "ai cli tool", "ai assistant", "command line tool", "cli"],
   "author": "Nabil Mansour",
