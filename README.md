@@ -16,6 +16,13 @@
 
 ## Installation
 
+### As a global CLI
+
+```bash
+npm install -g rapid-lama
+rlama "Summarize recursion in one paragraph."
+```
+
 ### From source (local development)
 
 ```bash
@@ -27,13 +34,6 @@ After building, run:
 
 ```bash
 node dist/cli.js "What is the capital of Italy?"
-```
-
-### As a global CLI (after publishing)
-
-```bash
-npm install -g rlama
-rlama "Summarize recursion in one paragraph."
 ```
 
 ## Usage
