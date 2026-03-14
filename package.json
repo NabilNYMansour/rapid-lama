@@ -11,13 +11,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
-    "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js"
   },
-  "keywords": [],
+  "keywords": ["rapid claw", "quick response", "ai cli tool", "ai assistant", "command line tool", "cli"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^25.5.0",
     "typescript": "^5.9.3"
