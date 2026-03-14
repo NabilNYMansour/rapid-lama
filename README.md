@@ -1,6 +1,6 @@
 # Rapid Lama
 
-`rlama` is a lightweight TypeScript CLI for fast, single-turn prompts against an Ollama server.
+`rlama` is a lightweight CLI for fast, single-turn prompts against an Ollama server.
 
 ## What It Does
 
