@@ -10,11 +10,10 @@ type OllamaGenerateResponse = {
 const args = process.argv.slice(2);
 
 if (args.includes("--help") || args.includes("-h")) {
-  console.log("rapidclaw - A CLI tool");
+  console.log("rlama - A CLI tool");
   console.log("");
   console.log("Usage:");
-  console.log("  rapidclaw [options] <message>");
-  console.log("  rclaw [options] <message>");
+  console.log("  rlama [options] <message>");
   console.log("");
   console.log("Options:");
   console.log("  -h, --help     Show help");
@@ -28,7 +27,7 @@ if (args.includes("--help") || args.includes("-h")) {
 
 if (args.length === 0) {
   console.error(
-    "Please provide a message. Example: rapidclaw \"say hello world\" (or rclaw \"say hello world\")"
+    "Please provide a message. Example: rlama \"what is the capital of Italy?\""
   );
   process.exit(1);
 }
@@ -38,7 +37,7 @@ const host = process.env.OLLAMA_HOST ?? "http://localhost:11434";
 const model = process.env.OLLAMA_MODEL ?? "llama3.2";
 const systemPrompt =
   process.env.OLLAMA_SYSTEM ??
-  "You are running inside rapidclaw, a single-turn CLI for rapid AI calls. There is no conversation history and only one user message per call. Treat the input as a standalone request and return a direct answer.";
+  "You are running inside rlama, a single-turn CLI for rapid AI calls. There is no conversation history and only one user message per call. Treat the input as a standalone request and return a direct answer.";
 const endpoint = `${host.replace(/\/+$/, "")}/api/generate`;
 
 const curlResult = spawnSync(
